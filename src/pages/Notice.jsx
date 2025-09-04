@@ -28,7 +28,7 @@ export default function Notice() {
       <Block title={s.general} items={r.general} />
       <Block title={s.fire} items={r.fire} />
       <Block title={s.electrical} items={r.electrical} />
-      <Block title={s.chemical} items={r.chemical} />
+      {/* <Block title={s.chemical} items={r.chemical} /> */}
       <Block title={s.emergency} items={r.emergency} />
     </>
   );

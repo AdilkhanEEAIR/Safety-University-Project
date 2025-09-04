@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <AntFooter className="footer">
-      <div>© {new Date().getFullYear()} IT Faculty — {t.footer.authors}: A.T., B.K. · {t.footer.coauthors}: C.D.</div>
+      <div>{new Date().getFullYear()} IT Faculty — {t.footer.authors}: A. D., A. O., T. K.</div>
     </AntFooter>
   );
 }

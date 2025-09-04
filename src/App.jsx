@@ -22,8 +22,9 @@ export default function App() {
     document.title = t.appTitle;
   }, [t.appTitle]);
 
+
   return (
-    <BrowserRouter>
+      <BrowserRouter>
       <Layout style={{ minHeight: "100vh" }}>
         <Header />
         <Content className="app-content">

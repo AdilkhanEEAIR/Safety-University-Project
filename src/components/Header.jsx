@@ -22,7 +22,7 @@ export default function Header() {
   const location = useLocation();
   const navigate = useNavigate();
   const { isAuth, logout, lang } = useUserStore();
-  const { score, resetScore } = useScoreStore(); 
+  const { score, resetScore } = useScoreStore();
   const t = translations[lang] || translations.en;
 
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1185);
@@ -54,15 +54,31 @@ export default function Header() {
   })();
 
   const menuItems = [
-    { key: "home", icon: <HomeOutlined />, label: <Link to="/">{t.nav.home}</Link> },
-    { key: "notice", icon: <ReadOutlined />, label: <Link to="/notice">{t.nav.notice}</Link> },
-    { key: "quiz", icon: <ExperimentOutlined />, label: <Link to="/quiz">{t.nav.quiz}</Link> },
-    { key: "leaderboard", icon: <TrophyOutlined />, label: <Link to="/leaderboard">{t.nav.leaderboard}</Link> },
+    {
+      key: "home",
+      icon: <HomeOutlined />,
+      label: <Link to="/">{t.nav.home}</Link>,
+    },
+    {
+      key: "notice",
+      icon: <ReadOutlined />,
+      label: <Link to="/notice">{t.nav.notice}</Link>,
+    },
+    {
+      key: "quiz",
+      icon: <ExperimentOutlined />,
+      label: <Link to="/quiz">{t.nav.quiz}</Link>,
+    },
+    {
+      key: "leaderboard",
+      icon: <TrophyOutlined />,
+      label: <Link to="/leaderboard">{t.nav.leaderboard}</Link>,
+    },
   ];
 
   const handleLogout = () => {
     logout();
-    resetScore(); 
+    resetScore();
     setDrawerOpen(false);
     navigate("/");
   };
@@ -116,7 +132,10 @@ export default function Header() {
               onClick={() => setDrawerOpen(false)}
             />
 
-            <Space direction="vertical" style={{ margin: "16px", width: "100%" }}>
+            <Space
+              direction="vertical"
+              style={{ margin: "16px", width: "100%" }}
+            >
               <Space align="center" size={8}>
                 <span>{t.leaderboard.score}:</span>
                 <Badge count={score} color="#3b82f6" />
@@ -172,11 +191,7 @@ export default function Header() {
                 <Link to="/profile">
                   <Button icon={<UserOutlined />}>{t.nav.profile}</Button>
                 </Link>
-                <Button
-                  danger
-                  icon={<LogoutOutlined />}
-                  onClick={handleLogout} 
-                >
+                <Button danger icon={<LogoutOutlined />} onClick={handleLogout}>
                   {t.nav.logout}
                 </Button>
               </>

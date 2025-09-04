@@ -37,9 +37,8 @@ export const translations = {
         fire: [
           "Keep flammable materials away from ignition sources.",
           "Do not block fire extinguishers or fire alarms.",
-          "Know PASS: Pull, Aim, Squeeze, Sweep.",
-          "If clothing catches fire: Stop, Drop, Roll.",
           "Never use water on electrical or oil fires.",
+          "In case of fire, always put out the flames with a fire extinguisher at the base of the fire."
         ],
         electrical: [
           "Inspect cords and plugs for damage before use.",
@@ -47,13 +46,6 @@ export const translations = {
           "Turn off equipment when not in use.",
           "Keep liquids away from electrical devices.",
           "Use only approved extension cords.",
-        ],
-        chemical: [
-          "Always wear appropriate PPE (goggles, lab coat, gloves).",
-          "Label and store chemicals properly.",
-          "Never pipette by mouth.",
-          "Use fume hoods when required.",
-          "Dispose of waste in designated containers.",
         ],
         emergency: [
           "Call campus security or emergency services immediately.",
@@ -111,11 +103,11 @@ export const translations = {
   },
 
   ru: {
-    appTitle: "Правила безопасности в IT-лабораториях",
+    appTitle: "Правила безопасности в IT-лаборатории",
     nav: {
       home: "Главная",
       notice: "Памятка",
-      quiz: "Вопросник",
+      quiz: "Вопросы",
       leaderboard: "Рейтинг",
       login: "Вход",
       register: "Регистрация",
@@ -148,9 +140,8 @@ export const translations = {
         fire: [
           "Держите горючие материалы подальше от источников огня.",
           "Не загромождайте огнетушители и пожарные извещатели.",
-          "Помните PASS: Pull, Aim, Squeeze, Sweep.",
-          "Если одежда загорелась: Стоп, Лечь, Кувырок.",
           "Нельзя тушить водой электрические/масляные пожары.",
+          "При пожаре всегда тушите пламя огнетушителем у основания огня.",
         ],
         electrical: [
           "Проверяйте кабели и вилки перед использованием.",
@@ -158,13 +149,6 @@ export const translations = {
           "Выключайте оборудование, когда не используете.",
           "Держите жидкости подальше от электроприборов.",
           "Используйте только одобренные удлинители.",
-        ],
-        chemical: [
-          "Всегда носите СИЗ (очки, халат, перчатки).",
-          "Подписывайте и правильно храните реактивы.",
-          "Никогда не пипетируйте ртом.",
-          "Работайте в вытяжном шкафу при необходимости.",
-          "Утилизируйте отходы в спец. контейнеры.",
         ],
         emergency: [
           "Немедленно звоните в охрану кампуса или 112.",
@@ -256,9 +240,8 @@ export const translations = {
         fire: [
           "Éloignez les matières inflammables des sources d'ignition.",
           "Ne bloquez pas les extincteurs ou alarmes incendie.",
-          "Retenez PASS : Pull, Aim, Squeeze, Sweep.",
-          "Si les vêtements prennent feu : Stop, Drop, Roll.",
           "N'utilisez jamais d'eau sur un feu électrique/huile.",
+          "En cas d'incendie, éteignez toujours la flamme avec un extincteur à la base du feu.",
         ],
         electrical: [
           "Vérifiez câbles et fiches avant usage.",
@@ -266,13 +249,6 @@ export const translations = {
           "Éteignez le matériel après usage.",
           "Éloignez les liquides des appareils.",
           "Utilisez uniquement des rallonges homologuées.",
-        ],
-        chemical: [
-          "Portez toujours les EPI (lunettes, blouse, gants).",
-          "Étiquetez et stockez correctement les produits.",
-          "Ne pipetez jamais avec la bouche.",
-          "Utilisez les hottes si nécessaire.",
-          "Éliminez les déchets dans les conteneurs dédiés.",
         ],
         emergency: [
           "Appelez immédiatement la sécurité du campus ou les secours.",
@@ -309,7 +285,7 @@ export const translations = {
     leaderboard: {
       title: "Classement",
       name: "Nom",
-      score: "Score",
+      score: "Points",
       date: "Date",
       empty: "Pas encore de résultats.",
     },
@@ -362,29 +338,22 @@ export const translations = {
           "Чыгууларды жана коопсуздук шаймандарын билиңиз.",
         ],
         fire: [
-          "Жанучу материалдарды от булактарынан алыстатыңыз.",
+          "Жануучу материалдарды от булактарынан алыстатыңыз.",
           "Өрт өчүргүчтөрдү/сигналдарды тоспоңуз.",
-          "PASS эсиңизде болсун: Pull, Aim, Squeeze, Sweep.",
-          "Кийим күйсө: Токто, Жат, Домала.",
-          "Электр/май күйүүсүнө суу колдонбоңуз.",
+          "Электр/май өрттөрүндө суу колдоңбоңуз",
+          "Өрт учурунда дайыма оттун түбүндөгү өрт өчүргүч менен отту өчүрүңүз.",
+          "Өрт болгон учурда жалынды дайыма өрттүн түбүндө өрт өчүргүч менен өчүрүңүз",
         ],
         electrical: [
-          "Зымдарды жана вилкасын текшериңиз.",
+          "Зымдарды жана вилкаларды текшериңиз.",
           "Розеткаларды ашыкча жүктөбөңүз.",
           "Колдонбогондо жабдууну өчүрүңүз.",
           "Суюктукту жабдуудан алыс кармаңыз.",
-          "Тек текшерилген узарткычтарды колдонуңуз.",
-        ],
-        chemical: [
-          "Ар дайым ЖЖК кийиңиз (көз айнек, халат, мээлей).",
-          "Заттарды туура белгелеңиз жана сактаңыз.",
-          "Ооз менен пипетка кылбаңыз.",
-          "Керек болсо соргуч шкаф колдонуңуз.",
-          "Калдыктарды атайын идишке таштаңыз.",
+          "Текшерилген гана узарткычтарды колдонуңуз.",
         ],
         emergency: [
           "Дароо кампус коопсуздугуна же 112ге чалыңыз.",
-          "Так жайды жана окуянын түрүн айтыңыз.",
+          "Так жайгашкан жайды жана окуянын түрүн айтыңыз.",
           "Тынч эвакуация болуп, чогулуу жерге барыңыз.",
           "Коопсуз болсо жардам бериңиз.",
           "Ар дайым персоналдын көрсөтмөсүн аткарыңыз.",
@@ -417,7 +386,7 @@ export const translations = {
     leaderboard: {
       title: "Рейтинг",
       name: "Аты",
-      score: "Баллы",
+      score: "Баллдар",
       date: "Дата",
       empty: "Азырынча жыйынтык жок.",
     },
