@@ -11,16 +11,22 @@ export const useUserStore = create(
       user: null,
       isAuth: false,
       hasAttempt: false,
-
       leaderboard: [],
 
-      register: (name, email) => set({ user: { name, email }, isAuth: true }),
-      login: (name, email) => set({ user: { name, email }, isAuth: true }),
+      register: (name, email) => {
+        set({ user: { name, email }, isAuth: true });
+        useScoreStore.getState().setUser({ name, email });
+      },
+
+      login: (name, email) => {
+        set({ user: { name, email }, isAuth: true });
+        useScoreStore.getState().setUser({ name, email });
+      },
 
       logout: () => {
-        useScoreStore.setState({ score: 0 }); 
-        useScoreStore.persist.clearStorage(); 
         set({ user: null, isAuth: false, hasAttempt: false });
+        useScoreStore.getState().resetScore();
+        useScoreStore.getState().setUser(null);
       },
 
       markAttempt: () => set({ hasAttempt: true }),
@@ -37,8 +43,6 @@ export const useUserStore = create(
         set({ leaderboard: [...without, entry] });
       },
     }),
-    {
-      name: "lab-safety-user", 
-    }
+    { name: "lab-safety-user" }
   )
 );
