@@ -18,8 +18,8 @@ export const useUserStore = create(
       login: (name, email) => set({ user: { name, email }, isAuth: true }),
 
       logout: () => {
-        useScoreStore.persist.clearStorage();
-        useScoreStore.setState({ score: 0 });
+        useScoreStore.setState({ score: 0 }); 
+        useScoreStore.persist.clearStorage(); 
         set({ user: null, isAuth: false, hasAttempt: false });
       },
 

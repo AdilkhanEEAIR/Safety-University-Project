@@ -10,7 +10,8 @@ export const useScoreStore = create(
       resetScore: () => set({ score: 0 }),
     }),
     {
-      name: "lab-safety-score", 
+      name: "lab-safety-score",
+      getStorage: () => localStorage,
     }
   )
 );
